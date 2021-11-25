@@ -2,6 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import static com.codepath.apps.restclienttemplate.models.Tweet.fromJsonArray;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -83,6 +84,25 @@ public class TimelineActivity extends AppCompatActivity {
 
         populateHomeTimeline();
     }
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main,menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        if (item.getItemId() == R.id.compose) {
+//            // Compose icon has been selected
+//            Toast.makeText(this,"Compose!",Toast.LENGTH_SHORT).show();
+//            // Navigate to the compose activity
+//            return true;
+//
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     private void loadMoreData() {
         // 1. send an API request to retrieve appropriate paginated data
